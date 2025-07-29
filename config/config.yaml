@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+database:
+  host: "localhost"
+  port: 5050
+  user: "postgres"
+  password: "Qq1234567"
+  dbname: "subscriptions"
+
+log:
+  level: "info"

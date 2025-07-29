@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  migration up:
+    aliases:
+      - "smu"
+    desc: "Run subscription up migration"
+    cmds:
+      - "migrate -database 'postgres://postgres:Qq1234567@localhost:5050/subscriptions?sslmode=disable' -path migrations up"
