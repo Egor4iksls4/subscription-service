@@ -1,4 +1,4 @@
-FROM golang:1.21-alpine AS builder
+FROM golang:1.24.2-alpine AS builder
 
 RUN apk add --no-cache git
 
@@ -21,8 +21,6 @@ WORKDIR /root/
 COPY --from=builder /app/main .
 
 COPY --from=builder /app/config ./config
-COPY --from=builder /app/.env .
-
 COPY --from=builder /app/migrations ./migrations
 
 RUN chown -R appuser:appuser .

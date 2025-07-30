@@ -8,6 +8,7 @@ import (
 	"os/signal"
 	"syscall"
 
+	_ "TestForWork/cmd/docs"
 	"TestForWork/internal/handler"
 	"TestForWork/internal/repository"
 	"TestForWork/internal/router"
